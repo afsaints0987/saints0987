@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Survey Form</title>
+    <link rel="icon" type="image/x-icon" href="img/dumbbell.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container pt-3">
+        <header id="header">
+            <h1 id="title" class="text-center">Fitness Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking time to answer the survey!</p>
+        </header>
+    <form id="survey-form" action="action.php" method="POST">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter you name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter you email address" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>How often do you exercise?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select options</option>
+                <option value="noExercise">Little/no exercise</option>
+                <option value="3times">3 times a week</option>
+                <option value="4times">4 times a week</option>
+                <option value="5times">5 times a week</option>
+                <option value="daily">Daily</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Do you have any medical conditions?</p>
+            <label><input name="user recommend" value="yes" type="radio" class="input-radio" checked>Yes</label>
+            <label><input name="user recommend" value="no" type="radio" class="input-radio" checked>No</label>
+            <label><input name="user recommend" value="preferNo" type="radio" class="input-radio" checked>Prefer Not to Say</label>
+        </div>
+        <div class="form-group form-check">
+            <p>How do you stay active?<span class="clue">(Check all that apply)</span></p>
+            <label class="form-check-label">
+                <input name="prefer" value="running" type="checkbox" class="input-checkbox">Running</label>
+            <label class="form-check-label">
+                <input name="prefer" value="weights" type="checkbox" class="input-checkbox">Lifting Weights</label>
+            <label class="form-check-label">
+                <input name="prefer" value="walking" type="checkbox" class="input-checkbox">Walking</label>
+            <label class="form-check-label">
+                <input name="prefer" value="yoga" type="checkbox" class="input-checkbox">Yoga</label>
+            <label class="form-check-label">
+                <input name="prefer" value="hiit" type="checkbox" class="input-checkbox">HIIT/Crossfit</label>
+            <label class="form-check-label">
+                <input name="prefer" value="others" type="checkbox" class="input-checkbox">Others</label>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea form-control" rows="5" name="comment" placeholder="Enter your comment here..."></textarea>            
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button btn-btn-primary">
+                Submit
+            </button>
+        </div>
+    </form>
+
+    </div>
+</body>

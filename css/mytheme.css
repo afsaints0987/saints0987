@@ -1,0 +1,26 @@
+/* #mainNav {
+    background: linear-gradient(-35deg,#333, #3535, #4343);
+} */
+html {
+    scroll-behavior: smooth;
+}
+#hero-banner {
+    background-image: url("../assets/img/hero-banner.jpg") !important;
+}
+#welcomeSec > img {
+    border-radius: 50%;
+    border: #333 solid 3px;
+}
+
+.my-avatar {
+    margin: 0 auto 16px auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: solid 2px #222222;
+    background-image: url('../assets/img/myself.png');
+    background-position: center;
+    background-size: 240px auto;
+}
+
+
